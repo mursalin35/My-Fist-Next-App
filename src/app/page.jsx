@@ -1,9 +1,18 @@
+import FeaturedRemedies from "@/components/Page/Home/FeaturedRemedies";
+import Hero from "@/components/Page/Home/Hero";
+import ProductCategories from "@/components/Page/Home/ProductCategories";
+import PromoBanner from "@/components/Page/Home/PromoBanner";
+import Testimonials from "@/components/Page/Home/Testimonials";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-    <h1>hello word </h1>
+    <div className=" mt-5 bg-zinc-50 font-sans dark:bg-black">
+      <Hero />
+      <FeaturedRemedies/>
+      <ProductCategories/>
+      <Testimonials/>
+      <PromoBanner/>
     </div>
   );
 }
