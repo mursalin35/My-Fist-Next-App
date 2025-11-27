@@ -129,7 +129,7 @@ export default function NavBar() {
       </div>
 
       {/* Desktop Menu */}
-      <ul className="hidden md:flex menu menu-horizontal gap-8">
+      <ul className="hidden md:flex menu menu-horizontal -ms-40 gap-8">
         {navLinks}
       </ul>
 
