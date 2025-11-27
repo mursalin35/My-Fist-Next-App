@@ -1,6 +1,6 @@
 export default function PromoBanner() {
   return (
-    <section className="py-16 bg-green-50 border-y border-green-200">
+    <section className="py-20 -mb-12 bg-green-50 border-y border-green-200">
       <div className="container mx-auto px-6 flex flex-col items-center text-center">
         
         <span className="text-green-700 font-semibold tracking-wide uppercase">
@@ -16,9 +16,7 @@ export default function PromoBanner() {
           boost immunity, and improve overall well-being—naturally.
         </p>
 
-        <button className="mt-8 px-8 py-3 bg-green-600 text-white rounded-lg font-semibold shadow-md hover:bg-green-700 hover:shadow-lg transition">
-          View All Remedies
-        </button>
+    
 
         {/* Decorative Icons Row */}
         <div className="mt-10 flex gap-8 opacity-80">
@@ -31,7 +29,7 @@ export default function PromoBanner() {
             <p className="text-sm mt-1 text-gray-600">Safe Remedies</p>
           </div>
           <div className="flex flex-col items-center">
-            <span className="text-3xl">🧪</span>
+            <span className="text-3xl">📜</span>
             <p className="text-sm mt-1 text-gray-600">Certified Quality</p>
           </div>
         </div>

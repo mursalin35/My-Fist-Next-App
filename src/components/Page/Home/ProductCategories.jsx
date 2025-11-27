@@ -1,9 +1,9 @@
 export default function ProductCategories() {
   const categories = [
-    { name: "Mother Tinctures", img: "/images/category1.jpg" },
-    { name: "Dilutions", img: "/images/category2.jpg" },
-    { name: "Tablets & Tonics", img: "/images/category3.jpg" },
-    { name: "Ointments", img: "/images/category4.jpg" },
+    { name: "Mother Tinctures", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2jvag8ZaTjzMS_8JmOBR288AF_ndiu-PzkA&s" },
+    { name: "Dilutions", img: "https://tiimg.tistatic.com/fp/1/005/424/homeopathic-medicine-186.jpg" },
+    { name: "Tablets & Tonics", img: "https://thumbs.dreamstime.com/z/alternative-herbal-medicine-13599358.jpg" },
+    { name: "Ointments", img: "https://www.firsthope.co.in/wp-content/uploads/2025/10/Preparation-of-Ointments-1-e1759508233791.webp" },
   ];
 
   return (
