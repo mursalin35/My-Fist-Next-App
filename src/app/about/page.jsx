@@ -24,7 +24,7 @@ export default function AboutUs() {
           </div>
           <div className="relative w-full h-64 md:h-80 rounded-lg overflow-hidden shadow-lg">
             <img 
-              src="https://images.unsplash.com/photo-1588776814546-f3db28c4d0f2?auto=format&fit=crop&w=800&q=80" 
+              src="https://medicaldialogues.in/h-upload/2022/04/09/173940-world-homeopathy-day.jpg" 
               alt="Our Story" 
               className="w-full h-full object-cover"
             />
@@ -62,7 +62,7 @@ export default function AboutUs() {
             Ready to explore our authentic homoeopathy products?
           </p>
           <a 
-            href="/items"
+            href="/products"
             className="px-8 py-3 bg-green-600 text-white font-semibold rounded-lg shadow hover:bg-green-700 transition"
           >
             Browse Products
