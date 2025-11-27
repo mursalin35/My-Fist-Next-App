@@ -1,36 +1,145 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🏥 M.S Homoeo Complex — Full Stack Application  
+Modern Homeopathy Shop Management System built with **Next.js 16 (App Router)**, **Node.js + Express API**, and **Protected Authentication System**.
 
-## Getting Started
+---
 
-First, run the development server:
+## 🚀 Features
+
+### 🔐 Authentication  
+- JSON Web Token (JWT) based login  
+- Protected API routes  
+- Protected frontend pages (Add Product, Manage Products)  
+- Auto redirect if user is not logged in  
+
+### 🛒 Product Management  
+- Add Product (protected)  
+- Manage Products (protected)  
+- Delete Product  
+- View Details  
+- Responsive table + card layout  
+
+### 🎨 UI/UX  
+- TailwindCSS + DaisyUI  
+- Clean, modern homoeopathy-style design  
+- Mobile-friendly navigation  
+- Profile dropdown + logout button  
+
+---
+
+## 📁 Project Structure
+
+```
+project-root/
+│── backend/
+│   ├── server.js
+│   ├── routes/
+│   └── controllers/
+│
+│── frontend/
+│   ├── app/
+│   │   ├── add-product/
+│   │   ├── manage-products/
+│   │   ├── login/
+│   │   ├── contact/
+│   │   ├── about/
+│   │   └── page.jsx
+│   ├── components/
+│   ├── context/
+│   └── styles/
+```
+
+---
+
+## ⚙️ Backend Setup (Node.js + Express)
+
+### 1️⃣ Install dependencies
+
+```bash
+cd backend
+npm install express cors dotenv jsonwebtoken bcryptjs mongoose
+```
+
+### 2️⃣ Run backend server  
+
+```bash
+npm start
+```
+
+Your API will run at:
+
+```
+http://localhost:5000
+```
+
+---
+
+## 💻 Frontend Setup (Next.js 16)
+
+### 1️⃣ Install dependencies
+
+```bash
+cd frontend
+npm install
+```
+
+### 2️⃣ Start the frontend dev server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+App will run at:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🔐 Protected Routes Summary
 
-To learn more about Next.js, take a look at the following resources:
+| Route | Type | Description |
+|-------|------|-------------|
+| `/add-product` | Protected | Add new product |
+| `/manage-products` | Protected | View, delete, manage all products |
+| `/login` | Public | Login page |
+| `/products` | Public | Product listing |
+| `/contact` | Public | Contact page |
+| `/about` | Public | About page |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🔌 Environment Variables
 
-## Deploy on Vercel
+Create a `.env` file in **backend**:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+PORT=5000
+MONGO_URI=YOUR_MONGO_URI
+JWT_SECRET=YOUR_SECRET_KEY
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Create a `.env.local` file in **frontend**:
+
+```
+NEXT_PUBLIC_API_URL=http://localhost:5000
+```
+
+---
+
+
+
+```
+POST   /api/products/add
+GET    /api/products/all
+DELETE /api/products/:id
+```
+
+---
+
+## ❤️ Developer  
+**M.S Mursalin**
+
+
+---
+
