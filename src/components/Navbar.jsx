@@ -141,7 +141,7 @@ export default function NavBar() {
               className="btn btn-ghost btn-circle avatar"
               onClick={() => setProfileOpen(!profileOpen)}
             >
-              <div className="w-9 rounded-full border-2 border-green-400 overflow-hidden">
+              <div className="w-11 h-11 rounded-full border-2 border-green-400 overflow-hidden">
                 <img
                   src={
                     user.image ||
